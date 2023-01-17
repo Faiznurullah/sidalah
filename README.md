@@ -42,7 +42,7 @@
 
 <h2 id="syarat">💾 Prasyarat yang Diperlukan</h2>
 
-Berikut adalah daftar layanan dan aplikasi yang wajib dan diperlukan selama anda menjalankan aplikasi sppie jika anda belum menginstall nya maka disarankan untuk menginstall nya terlebih dahulu
+Berikut adalah daftar layanan dan aplikasi yang wajib dan diperlukan selama anda menjalankan aplikasi Sidalah jika anda belum menginstall nya maka disarankan untuk menginstall nya terlebih dahulu
 
 - PHP 8 & Web Server [XAMPP, LAMPP, MAMP]
 - Web Browser [Chrome, Firefox, Safari & Opera]
