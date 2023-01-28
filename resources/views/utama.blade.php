@@ -13,6 +13,21 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ asset('utama') }}/css/styles.css" rel="stylesheet" />
     </head>
+    <style>
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
@@ -33,7 +48,7 @@
                 </div>
             </nav>
             <!-- Header-->
-            <header class="bg-light py-5">
+            <header class="py-5">
                 <div class="container px-5">
                     <div class="row">
                         <div class="col-lg-7 col-md-6 col-xl-7 col-xxl-6">
@@ -59,30 +74,29 @@
               <section class="py-5 mb-5" id="about">
                 <h3 class="text-center"><b>About Website</b></h3>
 
-                <div class="container mt-5">
+                <div class="album py-5">
+                    <div class="container">
 
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="{{ asset('utama') }}/pict1.jpg" class="d-block w-100" alt="{{ asset('utama') }}/pict1.jpg">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="{{ asset('utama') }}/pict2.jpg" class="d-block w-100" alt="{{ asset('utama') }}/pict2.jpg">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="{{ asset('utama') }}/pict3.jpg" class="d-block w-100" alt="{{ asset('utama') }}/pict3.jpg">
-                      </div>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                            @foreach ($data as $item)
+                            <div class="col">
+                              <div class="card shadow-sm">
+                                <img class="img-fluid animated pulse infinite" src="{{ asset('source/img-fasilitas/'.$item->foto) }}">
+                                <div class="card-body">
+                                    <p class="lead">{{ $item->nama }}</p>
+                                  <p class="card-text">{{ $item->deskripsi }}</p>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>           
+                              @endforeach
+
+                        </div>
+
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-
                 </div>
 
               </section>

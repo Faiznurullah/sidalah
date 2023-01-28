@@ -24,7 +24,7 @@ class GuruController extends Controller
             'guru' => $this->GuruModel->allData(),
         ];
 
-        return view('guru', $data);
+        return view('guru.guru', $data);
 
     }
 
@@ -41,7 +41,7 @@ class GuruController extends Controller
             'guru' => $this->GuruModel->detailData($id),
         ];
 
-        return view('detailGuru', $data);
+        return view('guru.detailGuru', $data);
 
     }
 
@@ -53,7 +53,7 @@ class GuruController extends Controller
             'jabatan' => $this->JabatanModel->allData(),
             ];
         
-        return view('addGuru', $data);
+        return view('guru.addGuru', $data);
 
     }
 
@@ -125,7 +125,7 @@ class GuruController extends Controller
             'jabatan' => $this->JabatanModel->allData(),
         ];
 
-        return view('editGuru', $data);
+        return view('guru.editGuru', $data);
         
 
     }
@@ -217,6 +217,7 @@ class GuruController extends Controller
         return redirect('/guru')->with('Pesan', 'Data Sukses Dihapus');
     }
 
+    
 
     
 }

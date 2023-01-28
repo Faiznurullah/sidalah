@@ -60,7 +60,7 @@
 
               <div class="col-md-6 mt-4">
                 <button class="btn btn-primary btn-md" type="submit">Kirim Data</button> 
-                <a href="/staff" class="btn btn-info btn-md">Kembali</a>
+                <a href="/fasilitas" class="btn btn-info btn-md">Kembali</a>
                   </div>  
 
               </div>

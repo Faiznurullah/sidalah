@@ -22,7 +22,7 @@ class SiswaController extends Controller
         $data = [
             'siswa' => $this->SiswaModel->allData(),
         ];
-        return view('siswa', $data);
+        return view('siswa.siswa', $data);
     }
 
     public function detail($id)
@@ -38,7 +38,7 @@ class SiswaController extends Controller
             'siswa' => $this->SiswaModel->detailData($id),
         ];
 
-        return view('detailSiswa', $data);
+        return view('siswa.detailSiswa', $data);
 
     }
 
@@ -49,7 +49,7 @@ class SiswaController extends Controller
             'kelas' => $this->KelasModel->allData(),
             ];
         
-        return view('addSiswa', $data);
+        return view('siswa.addSiswa', $data);
 
     }
 
@@ -76,8 +76,6 @@ class SiswaController extends Controller
             'tgl.required' => 'Tanggal Wajib Diisi !!!',
             'alamat.required' => 'Alamat Wajib Diisi !!!',
         ]);
-
-
 
 
 
@@ -108,6 +106,7 @@ class SiswaController extends Controller
         if(!$this->SiswaModel->detailData($id)){
 
             abort(404);
+            
 
         }
 
@@ -116,7 +115,7 @@ class SiswaController extends Controller
             'kelas' => $this->KelasModel->allData(),
         ];
 
-        return view('editSiswa', $data);
+        return view('siswa.editSiswa', $data);
         
     }
 

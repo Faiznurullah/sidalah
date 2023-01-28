@@ -13,10 +13,12 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
 
 
+
 Route::get('/', [UtamaController::class, 'index']);
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
 
 // Route Guru
 Route::get('/guru', [GuruController::class, 'index'])->name('guru');
@@ -73,8 +75,8 @@ Route::get('/fasilitas/edit/{id}', [FasilitasController::class, 'edit']);
 Route::post('/fasilitas/update/{id}', [FasilitasController::class, 'update']);
 Route::get('/fasilitas/hapus/{id}', [FasilitasController::class, 'delete']);
 
-// Route: Profile
-Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+
+
 
 
 

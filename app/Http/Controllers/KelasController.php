@@ -21,12 +21,12 @@ public function __construct()
             'nama_kelas' => $this->KelasModel->allData(),
         ];
 
-        return view('kelas', $data);
+        return view('kelas.kelas', $data);
     }
 
     public function add()
     {
-       return view('addKelas');
+       return view('kelas.addKelas');
     }
 
 
@@ -69,7 +69,7 @@ public function __construct()
             'nama_kelas' => $this->KelasModel->detailData($id),
         ];
 
-        return view('editKelas', $data);
+        return view('kelas.editKelas', $data);
         
     }
 

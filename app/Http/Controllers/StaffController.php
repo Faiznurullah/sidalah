@@ -25,7 +25,7 @@ class StaffController extends Controller
             'staff' => $this->StaffModel->allData(),
         ];
 
-        return view('staff', $data);
+        return view('staff.staff', $data);
     }
 
     public function detail($id)
@@ -42,7 +42,8 @@ class StaffController extends Controller
             'staff' => $this->StaffModel->detailData($id),
         ];
 
-        return view('detailStaff', $data);
+        return view('staff.detailStaff', $data);
+
 
     }
 
@@ -54,7 +55,7 @@ class StaffController extends Controller
             'jabatan' => $this->JabatanModel->allData(),
             ];
         
-        return view('addStaff', $data);
+        return view('staff.addStaff', $data);
 
     }
 
@@ -105,6 +106,7 @@ class StaffController extends Controller
    $this->StaffModel->addData($data);
    return redirect()->route('staff')->with('Pesan', 'Data Sukses Dikirim');
 
+   
     }
 
     public function edit($id)
@@ -121,7 +123,7 @@ class StaffController extends Controller
             'jabatan' => $this->JabatanModel->allData(),
         ];
 
-        return view('editStaff', $data);
+        return view('staff.editStaff', $data);
         
     }
 

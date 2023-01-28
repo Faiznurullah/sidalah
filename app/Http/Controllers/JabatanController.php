@@ -20,12 +20,12 @@ class JabatanController extends Controller
             'nama_jabatan' => $this->JabatanModel->allData(),
         ];
 
-        return view('jabatan', $data);
+        return view('jabatan.jabatan', $data);
     }
 
     public function add()
     {
-       return view('addJabatan');
+       return view('jabatan.addJabatan');
     }
 
 
@@ -68,7 +68,7 @@ class JabatanController extends Controller
             'nama_jabatan' => $this->JabatanModel->detailData($id),
         ];
 
-        return view('editJabatan', $data);
+        return view('jabatan.editJabatan', $data);
         
     }
 

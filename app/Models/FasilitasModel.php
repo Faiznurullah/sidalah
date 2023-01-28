@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 class FasilitasModel extends Model
 {
    
+   protected $table = 'fasilitas';
 
     public function allData(){
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FasilitasModel;
 use Illuminate\Http\Request;
 
 class UtamaController extends Controller
@@ -14,8 +15,9 @@ class UtamaController extends Controller
 
     public function index() {
 
+         $data = FasilitasModel::all();
 
-        return view('utama');
+        return view('utama', compact('data'));
 
     }
 

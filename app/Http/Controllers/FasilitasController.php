@@ -8,6 +8,7 @@ class FasilitasController extends Controller
 {
  
 
+    
     public function __construct()
     {
         $this->middleware('auth');
@@ -21,7 +22,7 @@ class FasilitasController extends Controller
             'fasilitas' => $this->FasilitasModel->allData(),
         ];
 
-        return view('fasilitas', $data);
+        return view('fasilitas.fasilitas', $data);
     }
 
     public function detail($id)
@@ -37,7 +38,7 @@ class FasilitasController extends Controller
             'fasilitas' => $this->FasilitasModel->detailData($id),
         ];
 
-        return view('detailFasilitas', $data);
+        return view('fasilitas.detailFasilitas', $data);
 
     }
 
@@ -45,7 +46,7 @@ class FasilitasController extends Controller
     public function add()
     {
         
-        return view('addFasilitas');
+        return view('fasilitas.addFasilitas');
 
     }
 
@@ -101,7 +102,7 @@ class FasilitasController extends Controller
             'fasilitas' => $this->FasilitasModel->detailData($id),
         ];
 
-        return view('editFasilitas', $data);
+        return view('fasilitas.editFasilitas', $data);
         
     }
 
