@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\DB;
 class KelasModel extends Model
 {
 
+  protected $table = 'daftar_kelas';
+
+    protected $fillable = [
+      'nama_kelas',
+  ];
+
 public function allData(){
 
 return DB::table('daftar_kelas')->get();

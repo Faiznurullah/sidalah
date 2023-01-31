@@ -108,7 +108,7 @@
     </div>
  </li>
                  
-  {{-- <!-- Divider -->
+  <!-- Divider -->
   <hr class="sidebar-divider">
 
 
@@ -132,7 +132,7 @@ aria-expanded="true" aria-controls="collapseTwo">
 <a class="collapse-item" href="/misi">Misi Sekolah</a>
 </div>
 </div>
-</li> --}}
+</li>
     
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">

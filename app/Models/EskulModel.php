@@ -12,6 +12,12 @@ class EskulModel extends Model
 
     protected $table = 'eskul';
 
+    protected $fillable = [
+      'nama',
+      'deskripsi',
+      'foto',
+  ];
+
     public function allData(){
 
         return DB::table('eskul')->get();

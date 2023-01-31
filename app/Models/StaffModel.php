@@ -17,6 +17,16 @@ class StaffModel extends Model
 
   protected $primaryKey = "id";
 
+    protected $fillable = [
+      'nip',
+      'nama',
+      'foto',
+      'tgl',
+      'alamat',
+      'jabatan',
+  ];
+
+
 public function allData(){
 
    return DB::table('tbl_staff')->leftJoin('daftar_jabatan', 'daftar_jabatan.id_jabatan', '=', 'tbl_staff.jabatan')->get();

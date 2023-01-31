@@ -11,6 +11,12 @@ class FasilitasModel extends Model
    
    protected $table = 'fasilitas';
 
+    protected $fillable = [
+      'nama',
+      'deskripsi',
+      'foto',
+  ];
+
     public function allData(){
 
         return DB::table('fasilitas')->get();

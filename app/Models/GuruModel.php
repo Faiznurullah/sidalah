@@ -11,7 +11,16 @@ class GuruModel extends Model
    
   protected $table = "tbl_guru";
 
-  protected $primaryKey = "id";
+    protected $fillable = [
+      'nip',
+      'nama',
+      'mapel',
+      'wali_kelas',
+      'foto',
+      'tgl',
+      'alamat',
+      'jabatan'
+  ];
 
 
  public function allData(){

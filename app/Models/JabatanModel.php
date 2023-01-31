@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\DB;
 
 class JabatanModel extends Model{
 
+  protected $table = 'eskul';
+
+    protected $fillable = [
+      'nama_jabatan',
+  ];
+
 public function allData(){
 
 return DB::table('daftar_jabatan')->get();

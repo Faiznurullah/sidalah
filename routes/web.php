@@ -10,7 +10,9 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\FasilitasController;
+use App\Http\Controllers\MisiController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\VisiController;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -86,5 +88,19 @@ Route::post('/eskul/update/{id}', [EskulController::class, 'update']);
 Route::get('/eskul/hapus/{id}', [EskulController::class, 'delete']);
 
 
+// Data Utama Visi
+Route::get('/visi', [VisiController::class, 'index'])->name('visi');
+Route::get('/visi/add', [VisiController::class, 'add']);
+Route::post('/visi/insert', [VisiController::class, 'insert']);
+Route::get('/visi/edit/{id}', [VisiController::class, 'edit']);
+Route::post('/visi/update/{id}', [VisiController::class, 'update']);
+Route::get('/visi/hapus/{id}', [VisiController::class, 'delete']);
 
+// Data Utama Misi
+Route::get('/misi', [MisiController::class, 'index'])->name('misi');
+Route::get('/misi/add', [MisiController::class, 'add']);
+Route::post('/misi/insert', [MisiController::class, 'insert']);
+Route::get('/misi/edit/{id}', [MisiController::class, 'edit']);
+Route::post('/misi/update/{id}', [MisiController::class, 'update']);
+Route::get('/misi/hapus/{id}', [MisiController::class, 'delete']);
 

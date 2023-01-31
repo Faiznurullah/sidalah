@@ -13,6 +13,15 @@ class SiswaModel extends Model
   protected $table = "tbl_siswa";
 
   protected $primaryKey = "id";
+
+    protected $fillable = [
+      'nis',
+      'nama',
+      'kelas',
+      'foto',
+      'tgl',
+      'alamat'
+  ];
    
     public function allData(){
 

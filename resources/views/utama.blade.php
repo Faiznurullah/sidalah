@@ -89,15 +89,15 @@
                 <div class="container">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
                  <div class="col-xl-12">
-                    <div class="card">
+                    <div class="card shadow-sm">
                         <div class="card-body">
                             <p class="lead Itemfont">Visi:</p>
-                            <p class="Itemfont">"Terwujudnya lulusan yang berakhlak mulia, unggul dalam IPTEKS, berprestasi, dan berbudaya lingkungan."</p>
+                            <p class="Itemfont">"{{ $data6->nama }}"</p>
                             <p class="lead Itemfont">Misi:</p>
                             <ol class="Itemfont">
-                              <li>Membudayakan nilai-nilai keagamaan dan kegiatan ibadah sesuai  dengan agama dan kepercayaan masing-masing</li>
-                              <li>Mewujudkan peserta didik yang berperilaku ramah dan berkarakter baik</li>
-                              <li>Mewujudkan pembelajaran yang berbasis digital dan kontekstual</li>
+                              @foreach ($data7 as $item)
+                              <li>{{ $item->nama }}</li>
+                              @endforeach
                             </ol>
                         </div>
                       </div>
@@ -108,21 +108,21 @@
                 <div class="container mt-5">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-4">
                   <div class="col-md-4">
-                    <div class="card">
+                    <div class="card shadow-sm">
                         <div class="card-body Itemfont">
                           Jumlah Guru: {{  $data3; }}
                         </div>
                       </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="card">
+                    <div class="card shadow-sm">
                         <div class="card-body Itemfont">
                             Jumlah Staff: {{  $data4; }}
                         </div>
                       </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="card">
+                    <div class="card shadow-sm">
                         <div class="card-body Itemfont">
                             Jumlah Siswa: {{  $data5; }}
                         </div>
