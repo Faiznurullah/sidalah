@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\DB;
 class GuruModel extends Model
 {
    
+  protected $table = "tbl_guru";
+
+  protected $primaryKey = "id";
+
+
  public function allData(){
 
    return DB::table('tbl_guru')

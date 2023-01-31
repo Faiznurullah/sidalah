@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EskulController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UtamaController;
 use App\Http\Controllers\HomeController;
@@ -66,7 +67,7 @@ Route::post('/jabatan/update/{id}', [JabatanController::class, 'update']);
 Route::get('/jabatan/hapus/{id}', [JabatanController::class, 'delete']);
 
 
-// Route Staff
+// Route Fasilitas
 Route::get('/fasilitas', [FasilitasController::class, 'index'])->name('fasilitas');
 Route::get('/fasilitas/detail/{id}', [FasilitasController::class, 'detail']);
 Route::get('/fasilitas/add', [FasilitasController::class, 'add']);
@@ -75,7 +76,14 @@ Route::get('/fasilitas/edit/{id}', [FasilitasController::class, 'edit']);
 Route::post('/fasilitas/update/{id}', [FasilitasController::class, 'update']);
 Route::get('/fasilitas/hapus/{id}', [FasilitasController::class, 'delete']);
 
-
+// Route Eskul
+Route::get('/eskul', [EskulController::class, 'index'])->name('eskul');
+Route::get('/eskul/detail/{id}', [EskulController::class, 'detail']);
+Route::get('/eskul/add', [EskulController::class, 'add']);
+Route::post('/eskul/insert', [EskulController::class, 'insert']);
+Route::get('/eskul/edit/{id}', [EskulController::class, 'edit']);
+Route::post('/eskul/update/{id}', [EskulController::class, 'update']);
+Route::get('/eskul/hapus/{id}', [EskulController::class, 'delete']);
 
 
 

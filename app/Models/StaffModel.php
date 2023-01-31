@@ -13,6 +13,10 @@ class StaffModel extends Model
 {
 
 
+  protected $table = "tbl_staff";
+
+  protected $primaryKey = "id";
+
 public function allData(){
 
    return DB::table('tbl_staff')->leftJoin('daftar_jabatan', 'daftar_jabatan.id_jabatan', '=', 'tbl_staff.jabatan')->get();

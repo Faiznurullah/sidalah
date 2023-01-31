@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\DB;
 
 class SiswaModel extends Model
 {
+
+  protected $table = "tbl_siswa";
+
+  protected $primaryKey = "id";
    
     public function allData(){
 

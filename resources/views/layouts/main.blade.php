@@ -57,72 +57,82 @@
     
                 <!-- Divider -->
                 <hr class="sidebar-divider">
-    
+
+                <!-- Heading -->
+                <div class="sidebar-heading">
+                    Data Pegawai
+                </div>
+
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo1"
+        aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-user-graduate"></i>
+        <span>Data Pegawai</span>
+    </a>
+    <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Kelola Data:</h6>
+            <a class="collapse-item" href="/guru">Data Guru</a>
+            <a class="collapse-item" href="/staff">Data Staff</a>
+            <a class="collapse-item" href="/jabatan">Data Jabatan</a>
+        </div>
+    </div>
+</li>
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+
+
                 <!-- Heading -->
                 <div class="sidebar-heading">
                     Data Sekolah
                 </div>
-    
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="/guru">
-                        <i class="fas fa-fw fa-user-graduate"></i>
-                        <span>Data Guru</span></a>
-                </li>
-
-                <!-- Divider -->
-                <hr class="sidebar-divider my-0">
-    
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="/staff">
-                        <i class="fas fa-fw fa-user-shield"></i>
-                        <span>Data Staff</span></a>
-                </li>
-
-                <!-- Divider -->
-                <hr class="sidebar-divider my-0">
-    
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="/siswa">
-                        <i class="fas fa-fw fa-user"></i>
-                        <span>Data Siswa</span></a>
-                </li>
 
 
-                <!-- Divider -->
-                <hr class="sidebar-divider my-0">
-    
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="/kelas">
-                        <i class="fas fa-fw fa-house-user"></i>
-                        <span>Data Kelas</span></a>
-                </li>
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+        aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-school"></i>
+        <span>Data Sekolah</span>
+    </a>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Kelola Data:</h6>
+            <a class="collapse-item" href="/siswa">Data Siswa</a>
+            <a class="collapse-item" href="/kelas">Data Kelas</a>
+            <a class="collapse-item" href="/fasilitas">Data Fasilitas</a>
+            <a class="collapse-item" href="/eskul">Data Ekstrakulikuler</a>
+        </div>
+    </div>
+ </li>
+                 
+  {{-- <!-- Divider -->
+  <hr class="sidebar-divider">
 
-                <!-- Divider -->
-                <hr class="sidebar-divider my-0">
-    
 
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="/jabatan">
-                        <i class="fas fa-fw fa-save"></i>
-                        <span>Data Jabatan</span></a>
-                </li>
+  <!-- Heading -->
+  <div class="sidebar-heading">
+      Data Utama
+  </div>
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
-    
 
-    <!-- Nav Item - Dashboard -->
-       <li class="nav-item active">
-     <a class="nav-link" href="/fasilitas">
-        <i class="fas fa-fw fa-building"></i>
-        <span>Data Fasilitas</span></a>
-         </li>
-   
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo2"
+aria-expanded="true" aria-controls="collapseTwo">
+<i class="fas fa-fw fa-id-badge"></i>
+<span>Data Utama</span>
+</a>
+<div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+<div class="bg-white py-2 collapse-inner rounded">
+<h6 class="collapse-header">Kelola Data:</h6>
+<a class="collapse-item" href="/visi">Visi Sekolah</a>
+<a class="collapse-item" href="/misi">Misi Sekolah</a>
+</div>
+</div>
+</li> --}}
     
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
